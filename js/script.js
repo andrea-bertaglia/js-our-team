@@ -45,3 +45,21 @@ for (let i = 0; i < ourTeam.length; i++) {
   console.log(`Immagine: ${singleMember["picture"]}`);
   console.log(`------------------------`);
 }
+
+// stampo i dati nel DOM
+const bodyElem = document.querySelector("body");
+
+const titleElem = document.createElement("h1");
+titleElem.innerText = "Il nostro TEAM";
+
+const listElem = document.createElement("ul");
+
+bodyElem.append(titleElem);
+bodyElem.append(listElem);
+
+for (let i = 0; i < ourTeam.length; i++) {
+  const listItem = document.createElement("li");
+  listItem.innerHTML = `<span style="font-weight:bold;">${ourTeam[i]["name"]}</span>, ${ourTeam[i]["role"]}, <em>${ourTeam[i]["picture"]}</em>`;
+
+  listElem.append(listItem);
+}

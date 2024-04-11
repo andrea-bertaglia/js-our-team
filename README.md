@@ -33,6 +33,15 @@ Stampare su console le informazioni di nome, ruolo e la stringa della foto per o
 
 Stampare le stesse informazioni su DOM sottoforma di stringhe
 
+### Svolgimento
+
+- prelevo l'elemento body
+- creo un elemento ul e lo aggiungo al body
+- per ogni elemento dell'array
+  - creo un elemento li
+  - aggiungo i dati nell'elemento (nome, ruolo, immagine)
+  - aggiungo gli elementi li all'elemento ul
+
 ## BONUS 1
 
 Trasformare la stringa foto in una immagine effettiva
