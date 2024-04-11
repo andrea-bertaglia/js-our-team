@@ -37,12 +37,12 @@ const ourTeam = [
 console.log(ourTeam);
 
 // stampo in console i dati del team
-for (let i = 0; i < ourTeam.length; i++) {
-  const singleMember = ourTeam[i];
-  console.log(`${i + 1}° elemento del Team:`);
-  console.log(`Nome: ${singleMember["name"]}`);
-  console.log(`Ruolo: ${singleMember["role"]}`);
-  console.log(`Immagine: ${singleMember["picture"]}`);
+for (let key in ourTeam) {
+  //   const singleMember = ourTeam[i];
+  console.log(`Elemento del Team:`);
+  console.log(`Nome: ${ourTeam[key].name}`);
+  console.log(`Ruolo: ${ourTeam[key].role}`);
+  console.log(`Immagine: ${ourTeam[key].picture}`);
   console.log(`------------------------`);
 }
 
@@ -57,9 +57,9 @@ for (let i = 0; i < ourTeam.length; i++) {
 // bodyElem.append(titleElem);
 // bodyElem.append(listElem);
 
-// for (let i = 0; i < ourTeam.length; i++) {
+// for (let key in ourTeam) {
 //   const listItem = document.createElement("li");
-//   listItem.innerHTML = `<span style="font-weight:bold;">${ourTeam[i]["name"]}</span>, ${ourTeam[i]["role"]}, <em>${ourTeam[i]["picture"]}</em><div><img widht="200px" height="200px" src="./img/${ourTeam[i]["picture"]}" alt="Foto"></div>`;
+//   listItem.innerHTML = `<span style="font-weight:bold;">${ourTeam[key].name}</span>, ${ourTeam[key].role}, <em>${ourTeam[key].picture}</em><div><img widht="200px" height="200px" src="./img/${ourTeam[key].picture}" alt="Foto"></div>`;
 
 //   listElem.append(listItem);
 // }
@@ -67,14 +67,14 @@ for (let i = 0; i < ourTeam.length; i++) {
 // stampo i dati nel DOM (CON LAYOUT A CARD)
 const rowElem = document.querySelector(".row");
 
-for (let i = 0; i < ourTeam.length; i++) {
+for (let key in ourTeam) {
   const cardElem = document.createElement("div");
   cardElem.classList.add("col");
   cardElem.innerHTML = `
-    <img src="./img/${ourTeam[i]["picture"]}" alt="Foto" />
+    <img src="./img/${ourTeam[key].picture}" alt="Foto" />
     <div class="caption">
-        <span style="font-weight: bold">${ourTeam[i]["name"]}</span>
-        <em>${ourTeam[i]["role"]}</em>
+        <span style="font-weight: bold">${ourTeam[key].name}</span>
+        <em>${ourTeam[key].role}</em>
     </div>`;
   console.log(cardElem);
 
