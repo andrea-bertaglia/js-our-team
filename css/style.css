@@ -6,5 +6,59 @@
 }
 
 body {
-  background-color: lightslategray;
+  background-color: #f5f5f1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  padding-top: 1em;
+}
+
+body p {
+  max-width: 50%;
+  line-height: 1.5em;
+  text-align: center;
+  font-size: 0.8rem;
+  padding-bottom: 2em;
+}
+
+.container {
+  display: flex;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding-bottom: 2em;
+}
+
+.col {
+  border: 0.5px solid grey;
+  width: calc(100% / 3 - 1em * 1);
+  background-color: #fff;
+}
+
+.col img {
+  max-width: 100%;
+}
+
+.caption {
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 1em 0;
+  gap: 1em;
 }

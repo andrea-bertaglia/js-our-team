@@ -53,4 +53,13 @@ Trasformare la stringa foto in una immagine effettiva
 
 ## BONUS 2
 
-Organizzare i singoli membri in card/schede. Se non vi sentite particolarmente creativi, potete prendere uno spunto dallo screenshot allegato.
+Organizzare i singoli membri in card/schede.
+
+### Svolgimento
+
+- modifico il layout generale su HTML/CSS
+- prelevo l'elemento row dal DOM
+- per ogni elemento dell'array
+  - creo un elemento col
+  - aggiungo nell'HTML tramite template literal le immagini e la descrizione
+  - aggiungo l'elemento col all'elemento row
