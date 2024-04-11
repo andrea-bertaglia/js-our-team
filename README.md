@@ -46,6 +46,11 @@ Stampare le stesse informazioni su DOM sottoforma di stringhe
 
 Trasformare la stringa foto in una immagine effettiva
 
+### Svolgimento
+
+- modifico il template literal dell'elemento li aggiungendo un div che contenga a sua volta l'immagine
+- aggiungo il path ./img alla stringa relativa al nome del file
+
 ## BONUS 2
 
 Organizzare i singoli membri in card/schede. Se non vi sentite particolarmente creativi, potete prendere uno spunto dallo screenshot allegato.

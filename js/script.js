@@ -59,7 +59,7 @@ bodyElem.append(listElem);
 
 for (let i = 0; i < ourTeam.length; i++) {
   const listItem = document.createElement("li");
-  listItem.innerHTML = `<span style="font-weight:bold;">${ourTeam[i]["name"]}</span>, ${ourTeam[i]["role"]}, <em>${ourTeam[i]["picture"]}</em>`;
+  listItem.innerHTML = `<span style="font-weight:bold;">${ourTeam[i]["name"]}</span>, ${ourTeam[i]["role"]}, <em>${ourTeam[i]["picture"]}</em><div><img widht="200px" height="200px" src="./img/${ourTeam[i]["picture"]}" alt="Foto"></div>`;
 
   listElem.append(listItem);
 }
