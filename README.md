@@ -16,9 +16,18 @@ Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
 
 Creare l’array di oggetti con le informazioni fornite.
 
+### Svolgimento
+
+- creo l'array di oggetti
+
 ## MILESTONE 1
 
 Stampare su console le informazioni di nome, ruolo e la stringa della foto per ogni membro del team
+
+### Svolgimento
+
+- per ogni elemento dell'array
+  stampo i dati in console
 
 ## MILESTONE 2
 

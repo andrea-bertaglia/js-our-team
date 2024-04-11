@@ -35,3 +35,13 @@ const ourTeam = [
 ];
 
 console.log(ourTeam);
+
+// stampo in console i dati del team
+for (let i = 0; i < ourTeam.length; i++) {
+  const singleMember = ourTeam[i];
+  console.log(`${i + 1}° elemento del Team:`);
+  console.log(`Nome: ${singleMember["name"]}`);
+  console.log(`Ruolo: ${singleMember["role"]}`);
+  console.log(`Immagine: ${singleMember["picture"]}`);
+  console.log(`------------------------`);
+}
